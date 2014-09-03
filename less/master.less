@@ -1,0 +1,123 @@
+@import "../css/kube.css";
+@import "mixins.less";
+@import "navigation.less";
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+/*-------------------------
+Table of Contents
+
+I.    | Global Variables
+II.   | Global Colors
+III.  | Global Font Styles
+IV.   | Global Styles
+V.    | Global Mixins
+VI.   | Header Styles
+VII.  | Home Page Styles
+VIII. | Side Page Styles
+IX.   | Footer Styles
+X.    | Media Queries
+
+--------------------------*/
+
+/*---------------------------------------------------------------------------- 
+I. Global Variables
+-----------------------------------------------------------------------------*/
+
+@menu-breakpoint: 800px; //Breakpoint for when the Menu Button shows on mobile
+@container-width: 90%; //width of the secondary container
+@images: "../images"; // default images
+
+
+/*---------------------------------------------------------------------------- 
+II. Global Colors
+-----------------------------------------------------------------------------*/
+
+@primary: #111;
+@hover-font-color: #E97C13;
+@menu-font-color: #fff; 
+
+/*---------------------------------------------------------------------------- 
+III. Global Font Styles (Mixins or Variables)
+-----------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------- 
+IV. Global Styles (Used throughout the entire site)
+-----------------------------------------------------------------------------*/
+
+.content{
+	padding:15px;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	color:@hover-font-color;
+}
+
+.units-container{
+	width:@container-width;
+	margin: 0 auto;
+}
+
+.selection(255,255,158);
+
+/*---------------------------------------------------------------------------- 
+V. Global Mixin Styles (Used throughout the entire site)
+-----------------------------------------------------------------------------*/
+
+.coverBG(@bgurl) { 
+	background-image:url('../images/@{bgurl}');
+	background-size:cover;
+	background-position:center;
+}
+
+/*---------------------------------------------------------------------------- 
+VI. Header Styles
+-----------------------------------------------------------------------------*/
+
+header{
+	width:100%;
+	height:38px;
+	background-color:@primary;
+}
+
+
+/*---------------------------------------------------------------------------- 
+VII. Home Page Styles
+-----------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- 
+VIII. Side Page Styles
+-----------------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- 
+IX. Footer Styles
+-----------------------------------------------------------------------------*/
+
+#footer{
+	background-color:@primary;
+	width:100%;
+	height:60px;
+}
+
+/*---------------------------------------------------------------------------- 
+X. Media Queries
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: @container-width) {
+    .units-container{
+    	width: 100%;
+    }
+}
+
+
